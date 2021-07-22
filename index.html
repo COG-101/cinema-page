@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet" type="text/css"> 
+    <link rel="icon" type="image/png" href="img/movie-favicon.png">
+    <script src="scripts\filterAvailable.js" type="text/javascript" defer></script>
+    <script>let toggleBool = false;</script> <!--Default value for filter function (see JS file for more info)-->
+    <title>Reel Film Movies</title>
+</head>
+
+
+<body>
+    <header>
+        <img id="logo" src="img/movie-logo.png" alt="'">
+         
+        <div class="brand-tag">
+            <p id="company-name">Reel-Film-Movies</p>
+            <p id="tag-line">For those too moral to torrent</p>
+        </div>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a id="active" href="#">Films</a></li>
+                <li><a href="#">Cinemas</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Gifts</a></li>
+            </ul>
+        </nav>
+
+        <a href="#"><button class="quick-book">Quick Book</button></a>
+    </header>
+
+
+
+    <section class="films">
+
+        <h1 class="page-title-films">Films</h1>
+        
+        <div class="secondary-nav">
+            <h2><a id="active" href="">Now Showing</a></h2>
+            <h2 class="coming-soon"><a href="">Coming Soon</a></h2>
+            <h2 class="prem-events"><a href="">Premiere Events</a></h2>
+        </div>
+
+        
+        <div class="film-cards-container">
+
+            <div class="filter-button-container">
+                <button class="filter-active" id="filter-button">Filter By Availability<img class="filter-icon" src="img/filter-icon.png" alt=""></button>
+            </div>
+
+
+            <article class="film-card" id="moonlight">
+
+                <div class="image-container">
+                        <img class="cover-image image-available" src="img/moonlight-cover.jpg" alt="">
+                    <p class="overlay-text"></p>
+                </div>
+
+                <div class="card-info">
+                    <h3 class="film-title">Moonlight</h3>
+                    <div class="card-buttons button-available">
+                        <a href="https://www.imdb.com/" target="_blank"><button class="info-button">Info</button></a>
+                        <a href="https://www.youtube.com/" target="_blank"><button class="trailer-button">Trailer</button></a>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <article class="film-card" id="gone-girl">
+
+                <div class="image-container">
+                    <img class="cover-image image-available" src="img/gone-girl-cover.jpg" alt="">
+                    <p class="overlay-text"></p>
+                </div>
+
+                <div class="card-info">
+                    <h3 class="film-title">Gone Girl</h3>
+                    <div class="card-buttons button-available">
+                        <a href="https://www.imdb.com/" target="_blank"><button class="info-button">Info</button></a>
+                        <a href="https://www.youtube.com/" target="_blank"><button class="trailer-button">Trailer</button></a>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <article class="film-card" id="ghost-in-the-shell">
+
+                <div class="image-container">
+                    <img class="cover-image image-available" src="img/ghost-in-the-shell.jpg" alt="">
+                    <p class="overlay-text"></p>
+                </div>
+
+                <div class="card-info">
+                    <h3 class="film-title">Ghost In The Shell</h3>
+                    <div class="card-buttons button-available">
+                        <a href="https://www.imdb.com/" target="_blank"><button class="info-button">Info</button></a>
+                        <a href="https://www.youtube.com/" target="_blank"><button class="trailer-button">Trailer</button></a>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <article class="film-card"  id="there-will-be-blood">
+
+                <div class="image-container">
+                    <img class="cover-image image-available" src="img/there-will-be-blood-cover.jpg" alt="">
+                    <p class="overlay-text"></p>
+                </div>
+
+                <div class="card-info">
+                    <h3 class="film-title">There Will Be Blood</h3>
+                    <div class="card-buttons button-available">
+                        <a href="https://www.imdb.com/" target="_blank"><button class="info-button">Info</button></a>
+                        <a href="https://www.youtube.com/" target="_blank"><button class="trailer-button">Trailer</button></a>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <article class="film-card"  id="schindlers-list">
+
+                <div class="image-container">
+                    <img class="cover-image image-available" src="img/schindlers-list-cover.jpg" alt="">
+                    <p class="overlay-text"></p>
+                </div>
+
+                <div class="card-info">
+                    <h3 class="film-title">Schindler's List</h3>
+                    <div class="card-buttons button-available">
+                        <a href="https://www.imdb.com/" target="_blank"><button class="info-button">Info</button></a>
+                        <a href="https://www.youtube.com/" target="_blank"><button class="trailer-button">Trailer</button></a>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <article class="film-card"  id="boyz-in-the-hood">
+
+                <div class="image-container">
+                    <img class="cover-image image-available"src="img/boyz-in-the-hood-cover.jpg" alt="">
+                    <p class="overlay-text"></p>
+                </div>
+
+                <div class="card-info">
+                    <h3 class="film-title">Boyz N The Hood</h3>
+                    <div class="card-buttons button-available">
+                        <a href="https://www.imdb.com/" target="_blank"><button class="info-button">Info</button></a>
+                        <a href="https://www.youtube.com/" target="_blank"><button class="trailer-button">Trailer</button></a>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <article class="film-card" id="dallas-buyers-club">
+
+                <div class="image-container">
+                    <img class="cover-image image-available" src="img/dallas-buyers-club-cover.jpg" alt="">
+                    <p class="overlay-text"></p>
+                </div>
+
+                <div class="card-info">
+                    <h3 class="film-title">Dallas Buyers Club</h3>
+                    <div class="card-buttons button-available">
+                        <a href="https://www.imdb.com/" target="_blank"><button class="info-button">Info</button></a>
+                        <a href="https://www.youtube.com/" target="_blank"><button class="trailer-button">Trailer</button></a>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <article class="film-card"  id="spirited-away">
+
+                <div class="image-container">
+                    <img class="cover-image image-available" src="img/spirited-away.jpg" alt="">
+                    <p class="overlay-text"></p>
+                </div>
+
+                <div class="card-info">
+                    <h3 class="film-title">Spirited Away</h3>
+                    <div class="card-buttons button-available">
+                        <a href="https://www.imdb.com/" target="_blank"><button class="info-button">Info</button></a>
+                        <a href="https://www.youtube.com/" target="_blank"><button class="trailer-button">Trailer</button></a>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <article class="film-card" id="the-shape-of-water">
+
+                <div class="image-container">
+                    <img class="cover-image image-available" src="img/the-shape-of-water-cover.jpg" alt="">
+                    <p class="overlay-text"></p>
+                </div>
+
+                <div class="card-info">
+                    <h3 class="film-title">The Shape Of Water</h3>
+                    <div class="card-buttons button-available">
+                        <a href="https://www.imdb.com/" target="_blank"><button class="info-button">Info</button></a>
+                        <a href="https://www.youtube.com/" target="_blank"><button class="trailer-button">Trailer</button></a>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <article class="film-card" id="blade-runner">
+
+                <div class="image-container">
+                    <img class="cover-image image-available" src="img/blade-runner-cover.jpg" alt="">
+                    <p class="overlay-text"></p>
+                </div>
+
+                <div class="card-info">
+                    <h3 class="film-title">Blade Runner</h3>
+                    <div class="card-buttons button-available">
+                        <a href="https://www.imdb.com/" target="_blank"><button class="info-button">Info</button></a>
+                        <a href="https://www.youtube.com/" target="_blank"><button class="trailer-button">Trailer</button></a>
+                    </div>
+                </div>
+
+            </article>
+
+        </div>
+    </section>
+
+    
+    <footer>
+        <hr>
+        <ul class="footer-links">
+            <li><a id="active" href="#">Films</a></li>
+            <li><a href="#">Cinemas</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Gifts</a></li>
+            <li><a href="#">Quick Book</a></li>
+        </ul>
+
+        <p class="subfooter-text">08 - HLT - 05 - Cinema Task</p>
+    </footer>
+    
+</body>
+
+</html>

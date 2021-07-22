@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+
+/*===========================
+CSS LAYOUT:
+    1. RESET DEFAULTS
+    2. GENERAL STYLING
+    3. NAV
+    4. PAGE TITLE & SECONDARY NAV
+    5. FILM CARDS
+    6. FOOTER
+    7. INTERACTIVE
+
+ATTRIBUTE=VALUE SELECTORS ORDERED BY:
+    1.SIZE
+    2.POSITION
+    3.STYLE
+===========================*/
+
+
+
+
+/* || RESET DEFAULTS */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+
+
+/* || GENERAL STYLING */
+
+a {
+    font-family:'Lato', sans-serif;
+    color: #8E9098;
+}
+
+h1 {
+    font-family:'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 35px;
+    text-transform: uppercase;
+    color: white;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 900;
+    font-family:'Lato', sans-serif;
+    text-transform: uppercase;
+    color: #8E9098;
+}
+
+h3 {
+    color: white;
+    font-family:'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 19px;
+    text-transform: uppercase;
+    margin: 8px 0px;
+}
+
+p {
+    font-family:'Lato', sans-serif;
+}
+
+button {
+    font-family:'Lato', sans-serif;
+}
+
+body {
+    background-color: #06091C;
+}
+
+
+
+
+/* || NAV */
+
+header {
+    margin: 35px 140px 0px 140px;
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    height: 33px;
+    cursor: pointer;
+}
+
+.brand-tag {
+    margin: 0px auto 0px 14px;
+    cursor: pointer;
+}
+
+#company-name {
+    font-size: 29px;
+    font-weight: 900;
+    font-family:'Lato', sans-serif;
+    text-transform: uppercase;
+    color: #4488FF;
+}
+
+#tag-line {
+    font-size: 15px;
+    font-weight: 700;
+    font-family:'Lato', sans-serif;
+    text-transform: uppercase;
+    color: white;
+}
+
+nav {
+    justify-content: flex-end;
+}
+
+.nav-links a {
+    margin-left: 47px;
+    font-weight: 900;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #8E9098;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.quick-book {
+    width: 154px;
+    height: 46px;
+    margin-left: 47px;
+    font-size: 17px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: white;
+    background-color: #2345F3;
+    box-shadow: 0px 0px 20px rgb(34, 68, 241, 0.37);
+    cursor: pointer;
+}
+
+
+
+
+/* || PAGE TITLE & SECONDARY NAV */
+
+.films {
+    margin-top: 100px;
+}
+
+.page-title-films {
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #777a88;
+    text-decoration-thickness: 5px;
+    text-underline-offset: 5px;
+}
+
+.secondary-nav {
+    margin-top: 49px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.secondary-nav h2 {
+    padding: 5px 33px;
+}
+
+.prem-events, .coming-soon {
+    border-left: 2px solid #83848E;
+}
+
+
+
+
+/* || FILM CARDS */
+
+.film-cards-container {
+    max-width: 1410px;
+    margin: 59px auto 122px auto;
+    display: flex;
+    justify-content: center;    
+    flex-wrap: wrap;
+}
+
+.filter-button-container {
+    width: 100%;
+    margin: 0px 39px 21px 0px;
+    text-align: end;
+}
+
+#filter-button {
+    width: 196px;
+    height: 34px;
+    font-size: 16px;
+    font-weight: 400;
+    align-self: flex-end;
+    text-transform: capitalize;
+    color: white;
+    background-color: #2345F3;
+    cursor: pointer;
+}
+
+.filter-icon {
+    width: 13.21px;
+    margin-left: 8px;
+}
+
+.film-card {
+    margin: 0px 6px 55px 6px;
+    margin: 0px 10px 55px 10px;
+    z-index: 2;
+    display: inline-block;
+}
+
+.image-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.cover-image {
+    width: 250px;
+}
+
+
+.image-available {
+    transition-property: transform;
+    transition-duration: 0.1s;
+    cursor: pointer;
+}
+
+.overlay-text {
+    font-weight: 700;
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+}
+
+.info-button {
+    height: 30px;
+    width: 95px;
+    margin-right: 11px;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    background-color: #2345F3;
+}
+
+.trailer-button {
+    height: 30px;
+    width: 95px;
+    font-size: 16px;
+    font-weight: 700;
+    border: solid 1px white;
+    background-color: transparent;
+    color: white;
+}
+
+
+
+
+/* || FOOTER */
+
+footer {
+    width: 100%;
+    margin-top: 50px;
+}
+.footer-links { 
+    margin: auto;   
+    text-align: center;
+}
+
+.footer-links li {
+    margin: 0px 6px;
+    display: inline-block;
+}
+
+.footer-links a {
+    margin: 0px 25px;
+    font-size: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #8E9098;
+}
+
+.subfooter-text {
+    font-size: 14px;
+    font-weight: 700;
+    margin: 40px 0px 40px 0px; 
+    text-align: center;
+    text-transform: uppercase;
+    color: #8E9098;
+}
+
+hr {
+    height: 1px;
+    width: 57%;
+    margin: 0px auto 51px auto;
+    text-align: center;
+    border: 0;
+    clear:both;
+    background-color: #2345F3;
+    border-radius: 10px;
+    opacity: 0.5;
+}
+
+
+
+
+/* || INTERACTIVE */
+
+#active {
+    color: white;
+}
+
+.nav-links a:hover , .secondary-nav a:hover, .footer-links a:hover {
+    color: white;
+} 
+
+.filter-active {  /* Made this a class instead of Pseudo selector so it coule be toggled */
+    background-color: #142A98;
+}
+
+#filter-button:hover, .quick-book:hover {
+    opacity: 0.9;
+}
+
+.image-available:hover {
+    cursor: pointer;
+    outline: 1px solid white;
+    transform: scale(1.02); 
+}
+
+.button-available button:hover {
+    opacity: .8;
+    cursor: pointer;
+}
